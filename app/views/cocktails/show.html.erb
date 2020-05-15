@@ -2,7 +2,7 @@
 	<div>
 		<h3 class="text-center">Cocktail details</h3>
 		<p>Name: <%= @cocktail.name %></p>
-		<%= cl_image_tag @cocktail.photo.key, alt: "", height:300px width:400px %>
+		<%= cl_image_tag @cocktail.photo.key, alt: "", height:300, width:400, crop: :fill %>
 		<h5>Ingredients : </h5>
 			<% @cocktail.doses.each do |dose| %>
 				<ul>
