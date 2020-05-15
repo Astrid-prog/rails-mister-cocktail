@@ -1,0 +1,11 @@
+<div class="container">
+<h1 class="text-center">Add a new cocktail</h1>
+	<div class="row justify-content-center">
+		<div class="col-12 col-lg-6">
+			<%= simple_form_for (@cocktail) do |f| %>
+        <%= f.input :name %>
+  			<%= f.submit class: 'btn btn-secondary btn-sm right'%>
+			<% end %>
+		</div>
+  </div>
+</div>

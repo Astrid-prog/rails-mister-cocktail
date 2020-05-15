@@ -1,0 +1,13 @@
+<div class="container">
+<h5>Add ingredients</h5>
+	<div class="row">
+		<div class="col-12 col-lg-6">
+			<%= simple_form_for [cocktail, dose] do |f| %>
+				<%= f.input :description %>
+				<%= f.association :ingredient, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
+  			<%= f.submit class: 'btn btn-secondary btn-sm'%>
+			<% end %>
+			<p><%= link_to "", "#" %></p>
+		</div>
+  </div>
+</div>
